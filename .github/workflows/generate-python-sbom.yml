@@ -59,7 +59,7 @@ jobs:
             VERSION="${{ github.event.inputs.version }}"
           fi
           echo "PROJECT_VERSION=$VERSION" >> $GITHUB_OUTPUT
-          echo $PROJECT_VERSION
+          echo "The version is: $VERSION"
 
       - name: Generate sbom
         run: cyclonedx-py requirements ${{ env.PRODUCT_PATH }}/requirements.txt -o bom.json
