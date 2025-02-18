@@ -9,7 +9,7 @@ on:
     #   - "pyproject.toml"
     #   - "requirements.txt"
     tags:
-      - "v*"
+      - "*"
   workflow_dispatch:
     inputs:
       version:
