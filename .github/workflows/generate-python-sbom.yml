@@ -52,7 +52,7 @@ jobs:
           if [[ "$GITHUB_REF" == refs/tags/* ]]; then
             VERSION="${GITHUB_REF#refs/tags/}"
           # Triggered by push to deps files
-          elif [[ "$GITHUB_EVENT_NAME" == "push"]]; then
+          elif [[ "$GITHUB_EVENT_NAME" == "push" ]]; then
             VERSION="latest"
           # Manual trigger
           else
